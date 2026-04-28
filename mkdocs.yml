@@ -1,0 +1,8 @@
+site_name: Hello Spring Boot
+site_description: Introduction to Red Hat Dev Spaces with a Spring Boot translation service
+
+nav:
+  - Overview: index.md
+
+plugins:
+  - techdocs-core
