@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,7 +16,6 @@ import java.time.Instant;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/helloworld-by-language")
 public class TranslationController {
 
     @Value("${translation.default-language:EN}")
@@ -24,7 +24,12 @@ public class TranslationController {
     @Value("${translation.file:translations.json}")
     private String translationFile;
 
-    @GetMapping(produces = MediaType.TEXT_PLAIN_VALUE)
+    @GetMapping("/")
+    public RedirectView redirectRoot() {
+        return new RedirectView("/helloworld-by-language");
+    }
+
+    @GetMapping(value = "/helloworld-by-language", produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<String> getTranslation() {
         try {
             String countryCode = defaultLanguage.toUpperCase();
