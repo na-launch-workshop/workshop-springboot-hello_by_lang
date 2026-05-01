@@ -6,8 +6,13 @@ metadata:
   description: |
     Introduction to Red Hat Dev Spaces with a Spring Boot translation service
   annotations:
+    backstage.io/kubernetes-id: workshop-springboot-hello-by-lang
+    backstage.io/kubernetes-namespace: developers-devspaces
     backstage.io/techdocs-ref: dir:.
 #   backstage.io/techdocs-ref: dir:https://<hosted-git-repo>     # use absolute path instead to consolidate techdocs among repo forks
+    janus-idp.io/tekton: workshop-springboot-hello-by-lang
+#   gitlab.com/instance: ""                   # uncomment these two gitlab.com lines to disable GitLab tabs
+#   gitlab.com/project-slug: ""               # i.e. Issues, Pull/Merge Requests, CI in entity details
   tags:
     - devspaces
     - springboot
