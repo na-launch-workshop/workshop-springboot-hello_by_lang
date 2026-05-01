@@ -22,6 +22,6 @@ metadata:
 #     icon: web
 spec:
   type: module
-  lifecycle: production
+  lifecycle: development
   owner: group:default/workshop-admins
   subcomponentOf: component:default/workshop-repository
