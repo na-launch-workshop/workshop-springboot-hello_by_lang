@@ -4,7 +4,7 @@ metadata:
   name: workshop-springboot-hello_by_lang
   title: Hello Spring Boot
   description: |
-    Introduction to Red Hat Dev Spaces with a Spring Boot translation service
+    Spin Up Cloud-Native Dev Environments in Seconds with Dev Spaces
   annotations:
     backstage.io/kubernetes-id: workshop-springboot-hello-by-lang
     backstage.io/kubernetes-namespace: developers-devspaces
