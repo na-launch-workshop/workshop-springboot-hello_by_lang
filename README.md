@@ -10,7 +10,7 @@ Instead of setting up tooling locally, developers get a ready-to-use workspace r
 
 ## 🎯 **Scenario**
 
-Inside your workspace is a very simple Spring Boot Application. The application returns a "hello world" based on the language you choose for it.
+Inside your workspace is a very simple Spring Boot Application. The application returns a "hello world" based on the language you choose for it!
 
 The country is based on a 2-letter country code.  
 For example, `countrycode=IT` will output "ciao mondo" (IT is for Italy).  
