@@ -4,7 +4,7 @@ Instead of setting up tooling locally, developers get a ready-to-use workspace r
 
 **Technology Stack:**  
 
-- Spring Boot 
+- Spring Boot
 
 ---
 
